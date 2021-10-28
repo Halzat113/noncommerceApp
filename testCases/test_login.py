@@ -5,6 +5,7 @@ from utilities.readProperties import get_project_root
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
+
 class Test_001_Login:
     username = ReadConfig.getApplicationCredential("username")
     password = ReadConfig.getApplicationCredential("password")
@@ -50,5 +51,3 @@ class Test_001_Login:
             self.logger.error("******************Login test is failed******************")
             self.driver.close()
             assert False
-
-
