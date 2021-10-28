@@ -5,7 +5,6 @@ from utilities.readProperties import get_project_root
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
-
 class Test_001_Login:
     username = ReadConfig.getApplicationCredential("username")
     password = ReadConfig.getApplicationCredential("password")
